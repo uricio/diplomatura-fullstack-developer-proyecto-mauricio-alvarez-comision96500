@@ -1,0 +1,360 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+body {
+    background-color: #f7e8cf;
+    font-family: "Roboto", sans-serif;
+}
+
+header h1,
+main h2,
+section h3,
+h2 {
+    color: #48341a;
+}
+
+main {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 1.3rem;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    color: #d15926;
+    font-weight: 450;
+    letter-spacing: 5px;
+    line-height: 25px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+/* estilos de nav bar */
+.navbar {
+    height: 5rem;
+
+}
+
+navbar-brand {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand-img {
+    height: 50px;
+    width: auto;
+    margin-left: 1.5rem;
+}
+
+/* quitar borde al menu hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #48341a;
+}
+
+/* estilos de main */
+main {
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.3rem;
+    border-radius: 45px;
+}
+
+header h1,
+main h2,
+section h3,
+h2 {
+    color: #48341a;
+}
+
+main p {
+    color: #d15926;
+    font-weight: 450;
+    letter-spacing: 5px;
+    line-height: 25px;
+}
+
+/* estilos de section y footer */
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.image-gallery .item:nth-child(3) {
+    grid-column: 1 / span 2;
+    /* ocupa las dos columnas */
+    justify-self: center;
+    /* centra el bloque */
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-gallery h3 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+section,
+footer {
+    color: #f7e8cf;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 3rem;
+    color: #48341a;
+}
+
+
+/* estilos de pagina registro.html  y login.html */
+#formulario-registro #login {
+    text-align: center;
+}
+
+form label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+main form div input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #d15926;
+    color: #f7e8cf;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* estilos de pagina recetas.html */
+
+/* contenedor principal */
+main.recetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 1.3rem;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* barra de busqueda */
+#search-recetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-recetas input[type="search"] {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+
+/* selector de dieta */
+.dietas {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dietas label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.dietas select {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+    font-size: 1rem;
+}
+
+/* seccion de receta*/
+section.recetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 1.3rem;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+/* Imagen y título */
+section.recetas img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0.4rem;
+}
+
+section.recetas h2 {
+    text-align: center;
+    color: #d15926;
+    margin-bottom: 15px;
+}
+
+section div ul li, section ol li {
+    color: #d15926;
+    justify-content: center;
+}
+
+/* Ingredientes */
+section.recetas ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+section.recetas li {
+    margin-bottom: 5px;
+}
+
+/* Preparación */
+section.recetas h3 {
+    margin-top: 10px;
+    color: #444;
+    font-weight: 600;
+}
+
+section.recetas ol {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+section.recetas ol li {
+    margin-bottom: 15px;
+}
+
+/* responsive */
+@media screen and (min-width: 1024px) {
+
+    .navbar-nav {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navbar-brand-img {
+        margin-right: 1.5rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    section.recetas {
+        grid-template-columns: 1fr;
+    }
+
+    #search-recetas {
+        flex-direction: column;
+    }
+
+    #search-recetas input[type="search"] {
+        width: 100%;
+    }
+
+    .recetas-ingredientes {
+        display: flex;
+        flex-direction: row;
+        /* fila en lugar de columna */
+        justify-content: center;
+        /* centra el conjunto */
+        align-items: flex-start;
+        /* alinea la parte superior */
+        text-align: left;
+        gap: 4rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
+    /* En pantallas grandes, la tercera imagen vuelve a ocupar solo una columna */
+    .image-gallery .item:nth-child(3) {
+        grid-column: auto;
+        justify-self: center;
+    }
+}

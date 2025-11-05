@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link de bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <!-- link al archivo css -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <!-- link de tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+            />
+        <title>Recetas</title>
+    </head>
+    <body>
+        <!-- banner principal -->
+        <!-- banner principal -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <img src="../img/logo.png" alt="Logo" width="30"
+                    height="24" class=" navbar-brand-img align-text-top">
+                <a class="navbar-brand" href="#">Que comemos?</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg"
+                    aria-controls="navbarOffcanvasLg" aria-label="Toggle
+                    navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1"
+                    id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active"
+                                    aria-current="page"
+                                    href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Loguearse</a>
+                            </li>
+                            <li class="nav-link">
+                                <a class="nav-link" href="registro.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- main -->
+        <main class="recetas">
+            <div>
+                <div id="search-recetas">
+                    <input type="search" placeholder="Escribe aqui la receta que deseas"/>
+                    <button type="submit">Buscar</button>
+                </div>
+                <div class="dietas">
+                    <label for="dietas">Selecciona el tipo de dieta que buscas</label>
+                    <select name="dietas" id="dietas">
+                        <option value="carnivoro">Carnivoro</option>
+                        <option value="vegetariano">Vegetariano</option>
+                        <option value="vegano">Vegano</option>
+                        <option value="celiaco">Celiaco</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+        <!-- contenido secundario -->
+        <section class="recetas">
+            <div>
+                <h2>Milanesa con pure</h2>
+                <div class="recetas-ingredientes">
+                    <img
+                        src="../img/milanesa-pure.jpg"
+                        alt="milanesa con pure"
+                        id="milanesa"
+                        />
+                    <div class="recetas-ingredientes__texto">
+                        <h3>Ingredientes</h3>
+                        <ul>
+                            <li>Carne</li>
+                            <li>Huevos</li>
+                            <li>Pan rallado</li>
+                            <li>Papas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Preparacion</h3>
+                <ol>
+                    <li>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Magni
+                        numquam quis laborum corrupti error cum, nostrum officia
+                        natus sint,
+                        eaque architecto ipsum rerum similique porro eos? Ullam
+                        repellendus
+                        ratione nesciunt.
+                    </li>
+                    <br />
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellendus
+                        doloribus veniam cumque saepe alias, ipsum quo aliquid
+                        voluptatum
+                        maiores ratione, vitae libero sint. Officia quasi sed
+                        doloribus
+                        dignissimos pariatur quis?
+                    </li>
+                    <br />
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo est
+                        impedit quae necessitatibus saepe, neque sed vitae
+                        eveniet excepturi
+                        aliquid iusto consequatur! Nulla excepturi laudantium
+                        sapiente dolor
+                        eligendi, assumenda reprehenderit?
+                    </li>
+                    <br />
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Architecto
+                        mollitia saepe totam quia eligendi, et repellendus
+                        facere commodi
+                        suscipit, beatae nisi sequi nihil hic autem nulla eius!
+                        Odit, natus
+                        dolorem.
+                    </li>
+                    <br />
+                    <li>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Soluta
+                        amet iusto quaerat veritatis, consectetur eaque
+                        corporis, dolore
+                        voluptates vel esse quam itaque dolores ipsum illum sed
+                        placeat.
+                        Sunt, delectus eveniet.
+                    </li>
+                    <br />
+                </ol>
+            </div>
+        </section>
+        <!-- pie de pagina -->
+        <footer>
+            <p>todos los derechos reservados</p>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
