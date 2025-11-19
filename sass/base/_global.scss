@@ -1,0 +1,21 @@
+//variables
+@use "../utilities/variables" as *;
+
+body {
+    background-color: $color-background;
+    font-family: "Roboto", sans-serif;
+    }
+    
+    
+    a {
+    text-decoration: none;
+    color: $color-primary;
+    }
+    
+    
+    header h1,
+    main h2,
+    section h3,
+    h2 {
+    color: $color-primary;
+    }

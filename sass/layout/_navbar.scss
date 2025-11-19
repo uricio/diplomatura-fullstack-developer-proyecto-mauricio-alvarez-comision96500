@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.navbar {
+    height: 5rem;
+    
+    
+    .navbar-brand {
+    font-weight: 600;
+    font-size: 1.1rem;
+    @include flex-center;
+    }
+    
+    
+    .navbar-brand-img {
+    height: 50px;
+    width: auto;
+    margin-left: 1.5rem;
+    }
+    
+    
+    .navbar-toggler {
+    border: none;
+    }
+    }

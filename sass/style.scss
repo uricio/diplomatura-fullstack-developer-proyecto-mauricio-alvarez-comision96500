@@ -1,0 +1,19 @@
+//Reset
+@use "base/reset" as *;
+//Home
+@use "pages/home" as *;
+
+@use "base/reset";
+@use "base/global";
+
+@use "layout/header";
+@use "layout/navbar";
+@use "layout/main";
+@use "layout/gallery";
+@use "layout/footer";
+@use "layout/mediaqueries";
+
+@use "pages/home";
+@use "pages/registro";
+@use "pages/login";
+@use "pages/recetas";
