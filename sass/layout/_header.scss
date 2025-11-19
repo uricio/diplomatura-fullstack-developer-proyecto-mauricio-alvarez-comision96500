@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+header {
+    text-align: center;
+    
+    
+    img {
+    height: 100px;
+    width: 100px;
+    @include rounded($radius-medium);
+    }
+    
+    
+    nav ul {
+    list-style: none;
+    }
+    }

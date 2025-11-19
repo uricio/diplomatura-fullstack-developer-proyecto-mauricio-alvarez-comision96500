@@ -1,29 +1,17 @@
-/* Flex center */
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Tamaños Responsivos */
-@mixin respond($breakpoint) {
-    @if $breakpoint ==tablet {
-        @media (min-width: $bp-tablet) {
-            @content;
-        }
     }
-
-    @if $breakpoint ==desktop {
-        @media (min-width: $bp-desktop) {
-            @content;
-        }
+    
+    
+    @mixin block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
-}
-
-/* contenedores redondeados */
-@mixin rounded-container {
-    background-color: $color-white;
-    border-radius: $radius-main;
-    padding: 2rem 1rem;
-    margin: 1rem;
-}
+    
+    
+    @mixin rounded($radius) {
+    border-radius: $radius;
+    }

@@ -1,9 +1,8 @@
-//Variables
 @use "../utilities/variables" as *;
 //Mixin
 @use "../utilities/mixin" as *;
 
-/* mq-tablet */
+//MQ Desktop
 @media screen and (min-width: 1024px) {
     .navbar-nav {
         @include flex-center;
@@ -16,11 +15,10 @@
     }
 }
 
-
+//MQ Tablet
 @media (min-width: 768px) {
     #search-recetas {
         flex-direction: column;
-
 
         input[type="search"] {
             width: 100%;

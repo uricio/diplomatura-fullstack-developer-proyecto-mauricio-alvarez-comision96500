@@ -1,0 +1,31 @@
+@use "../utilities/variables" as *;
+//Mixin
+@use "../utilities/mixin" as *;
+
+#login {
+    text-align: center;
+    form {
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        div input {
+            @include block-center;
+        }
+    }
+}
+
+
+button {
+    background-color: $color-accent;
+    color: $color-background;
+    @include rounded(10px);
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin: 1rem 0;
+}

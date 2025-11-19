@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+//Mixin
+@use "../utilities/mixin" as *;
+
+#formulario-registro {
+    text-align: center;
+
+
+    form {
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        div input {
+            @include block-center;
+        }
+    }
+}

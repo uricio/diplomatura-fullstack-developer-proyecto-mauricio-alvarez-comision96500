@@ -1,8 +1,6 @@
 @use "../utilities/variables" as *;
-//Mixin
 @use "../utilities/mixin" as *;
 
-//Estilos de Main
 main {
     margin-top: 8rem;
     @include flex-center;
@@ -13,22 +11,22 @@ main {
     background-color: $white;
     @include rounded($radius-large);
     margin: 0.5rem 1rem;
-
-
+    
+    
     p {
-        color: $color-accent;
-        font-weight: 450;
-        letter-spacing: 5px;
-        line-height: 25px;
-        padding: 0 1.5rem;
+    color: $color-accent;
+    font-weight: 450;
+    letter-spacing: 5px;
+    line-height: 25px;
+    padding: 0 1.5rem;
     }
-
-
+    
+    
     img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        padding: 1.3rem;
-        @include rounded(45px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.3rem;
+    @include rounded(45px);
     }
-}
+    }
