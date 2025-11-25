@@ -4,18 +4,18 @@
 
 #formulario-registro {
     text-align: center;
+}
 
+form {
 
-    form {
+    label,
+    input {
+        display: block;
+        margin-bottom: 10px;
+    }
 
-        label,
+    div {
         input {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-
-        div input {
             @include block-center;
         }
     }

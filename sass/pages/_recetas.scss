@@ -6,10 +6,10 @@ main.recetas,
 section.recetas {
   @include flex-center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   padding: 2rem 1rem;
   gap: 1.3rem;
-  background-color: $white;
+  background-color: $color-texto-bg;
   @include rounded($radius-large);
   margin: 1rem;
 
@@ -22,7 +22,7 @@ section.recetas {
   }
 
   h2 {
-    color: $color-accent;
+    color: $color-primario;
     margin-bottom: 15px;
   }
 
@@ -32,7 +32,7 @@ section.recetas {
   }
 
   li {
-    color: $color-accent;
+    color: $color-texto;
     margin-bottom: 5px;
   }
 
