@@ -13,6 +13,13 @@
     .navbar-brand-img {
         margin-right: 1.5rem;
     }
+    .image-gallery img {
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        @include rounded(45px);
+
+    }
 }
 
 //MQ Tablet
@@ -26,14 +33,33 @@
     }
 
 
-    .recetas-ingredientes {
+    .main.recetas {
+        @include grid-column;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
         text-align: left;
-        gap: 4rem;
+        padding: 2rem 1rem;
+        gap: 1.3rem;
+        background-color: $color-texto-bg;
+        @include rounded($radius-large);
+        margin: 1rem;
     }
+
+    .recetas {
+        @include flip-columns;
+        gap: 2rem;
+
+        .recetas-ingredientes {
+            width: 350px;
+        }
+
+        // .recetas-preparacion {
+        //     width: 100%;
+        // }
+
+    }
+
+
+    
 
 
     .image-gallery {

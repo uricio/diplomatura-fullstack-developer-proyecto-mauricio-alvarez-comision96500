@@ -2,16 +2,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    
-    
+}
+
+
 @mixin block-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
-    
-    
+}
+
+
 @mixin rounded($radius) {
     border-radius: $radius;
-    }
+}
+
+@mixin grid-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+@mixin flip-columns {
+    display: flex;
+    flex-direction: row-reverse;
+}

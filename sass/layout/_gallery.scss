@@ -2,12 +2,7 @@
 @use "../utilities/mixin" as *;
 
 .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: space-around;
-    margin-top: 1rem;
-    text-align: center;
+    @include grid-column;
     
     
     .item:nth-child(3) {
